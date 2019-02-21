@@ -1,0 +1,1 @@
+"# BlackHand DNS Adblocker" 
