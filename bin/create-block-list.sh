@@ -6,7 +6,7 @@
 # Address to send ads to. This could possibily be removed, but may be useful for debugging purposes?
 destinationIP="0.0.0.0"
 
-outlist='/data/blocklist.txt'
+outlist='/bh-dns-adblocker/conf/blocklist.txt'
 tempoutlist="$outlist.tmp"
 
 echo "Getting yoyo ad list..."
