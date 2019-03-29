@@ -1,4 +1,4 @@
-# BlackHand DNS ADBlocker
+# BlackHand DNS ADBlocker ver-1.0.0
 
 使用Docker架設阻擋廣告的DNS伺服器
 
