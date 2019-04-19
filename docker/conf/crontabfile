@@ -1,4 +1,0 @@
-#!/bin/bash
-PATH=/opt/someApp/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-
-0 23 * * * /bh-dns-adblocker/bin/refresh.sh >> /var/log/cron.log 2>&1
