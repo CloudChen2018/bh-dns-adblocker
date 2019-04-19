@@ -14,13 +14,14 @@ RUN \
   cron
 
 RUN \
-  mv "/bh-dns-adblocker/conf/dnsmasq.conf" "/etc/dnsmasq.conf" && \
-  mkdir "/bh-dns-adblocker/logs" && \
-  crontab "/bh-dns-adblocker/conf/crontabfile" && \
-  cp "/bh-dns-adblocker/conf/crontabfile" "/etc/crontab" && \
-  touch "/var/log/cron.log"
+  chmod +x /bh-dns-adblocker/bin/*.sh && \
+  mv /bh-dns-adblocker/conf/dnsmasq.conf /etc/dnsmasq.conf && \
+  mkdir /bh-dns-adblocker/logs && \
+  crontab /bh-dns-adblocker/conf/crontabfile && \
+  cp /bh-dns-adblocker/conf/crontabfile /etc/crontab && \
+  touch /var/log/cron.log
 
 EXPOSE 53/tcp
 EXPOSE 53/udp
 
-ENTRYPOINT ["/bh-dns-adblocker/bin/start.sh"]
+ENTRYPOINT /bh-dns-adblocker/bin/start.sh
