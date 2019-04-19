@@ -7,10 +7,17 @@ Feature
 - 使用Docker架設可以阻擋廣告的DNS
 - 每天自動更新黑名單
 
-Installation
+Use
 =========================
-- [安裝Docker](https://docs.docker.com/install/linux/docker-ce/debian/)
-- clone本項目以後，在根目錄下指令 `docker-compose up -d`
+
+````
+sudo docker run
+  --name "bh-dns-adblocker" \
+  --publish "53:53/tcp" \
+  --publish "53:53/udp" \
+  --volume "./logs/:/bh-dns-adblocker/logs/" \
+  cloudchen2015/bh-dns-adblocker:latest
+````
 
 Change Log
 =========================

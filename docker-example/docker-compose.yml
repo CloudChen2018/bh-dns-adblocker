@@ -1,7 +1,7 @@
 version: '3'
 services:
-  bh-dns-adblocker:
-    build: .
+  adblocker:
+    image: cloudchen2015/bh-dns-adblocker
     volumes:
       - ./logs/:/bh-dns-adblocker/logs/
     ports:
