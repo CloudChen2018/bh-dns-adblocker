@@ -1,4 +1,4 @@
-# BlackHand DNS ADBlocker ver-1.0.0
+# BlackHand DNS ADBlocker ver-1.0.1
 
 使用Docker架設阻擋廣告的DNS伺服器
 
@@ -24,3 +24,6 @@ Change Log
 - 1.0.0
     - DNS Server Dockerfile和設定完成
     - 加入了自動更新黑名單功能
+
+- 1.0.1
+    - 修正執行檔無法執行的問題
